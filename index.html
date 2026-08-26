@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Primary Meta Tags -->
+    <title>Web Developer & AI Solutions Builder</title>
+    <meta name="description" content="Modern websites, business applications, and AI-powered digital products designed with usability, performance, and practical business value in mind." />
+    <meta name="author" content="Zakar" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Web Developer & AI Solutions Builder" />
+    <meta property="og:description" content="Modern websites, business applications, and AI-powered digital products designed with usability, performance, and practical business value in mind." />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Web Developer & AI Solutions Builder" />
+    <meta name="twitter:description" content="Modern websites, business applications, and AI-powered digital products designed with usability, performance, and practical business value in mind." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#0a0a0b" />
+
+    <script>
+      // Prevent flash of wrong theme
+      (function() {
+        const stored = localStorage.getItem('portfolio-theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

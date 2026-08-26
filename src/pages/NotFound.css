@@ -1,0 +1,44 @@
+.not-found {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.not-found__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.not-found__code {
+  font-family: 'Outfit', sans-serif;
+  font-size: clamp(6rem, 15vw, 12rem);
+  font-weight: 800;
+  color: var(--accent);
+  opacity: 0.15;
+  line-height: 1;
+}
+
+.not-found__message {
+  max-width: 480px;
+}
+
+.not-found__actions {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+@media (max-width: 480px) {
+  .not-found__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .not-found__actions .btn {
+    width: 100%;
+  }
+}

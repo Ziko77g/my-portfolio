@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌙</text></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Restaurant | An Unforgettable Dining Experience</title>
+    <meta name="description" content="Experience fine dining at Luna Restaurant. Fine ingredients, refined culinary craftsmanship, and an unforgettable luxury atmosphere." />
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Luna Restaurant | Fine Dining & Luxury Atmosphere" />
+    <meta property="og:description" content="An unforgettable dining experience featuring artisanal gastronomy, curated ambiance, and world-class culinary craft." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lunarestaurant.demo" />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema.org Restaurant Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Luna Restaurant",
+      "image": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80",
+      "description": "An unforgettable fine dining restaurant blending seasonal ingredients with modern gastronomy.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Moonlight Avenue",
+        "addressLocality": "Metropolis",
+        "addressRegion": "CA",
+        "postalCode": "90210",
+        "addressCountry": "US"
+      },
+      "telephone": "+1 (555) 234-5678",
+      "servesCuisine": ["Fine Dining", "Contemporary", "International"],
+      "priceRange": "$$$$",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+          "opens": "17:00",
+          "closes": "23:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Friday", "Saturday"],
+          "opens": "17:00",
+          "closes": "00:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Sunday"],
+          "opens": "16:00",
+          "closes": "22:00"
+        }
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-[#0C0C0E] text-[#F4F0EA] antialiased selection:bg-[#C5A880] selection:text-[#0C0C0E]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

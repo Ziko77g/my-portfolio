@@ -1,0 +1,118 @@
+.about {
+  border-top: 1px solid var(--border-primary);
+}
+
+.about__inner {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: var(--space-4xl);
+  align-items: center;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.about__inner--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.about__content .eyebrow {
+  display: block;
+  margin-bottom: var(--space-lg);
+}
+
+.about__title {
+  margin-bottom: var(--space-xl);
+}
+
+.about__description {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+.about__visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2xl);
+}
+
+.about__brand-mark {
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xl);
+  border: 2px solid var(--border-accent);
+  background: var(--accent-subtle);
+}
+
+.about__initial {
+  font-family: 'Outfit', sans-serif;
+  font-size: 4rem;
+  font-weight: 800;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.about__focus-areas {
+  text-align: center;
+}
+
+.about__focus-title {
+  font-family: 'Inter', sans-serif;
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-lg);
+}
+
+.about__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  justify-content: center;
+}
+
+.about__tag {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--border-primary);
+  border-radius: var(--radius-2xl);
+  transition: all var(--transition-base);
+}
+
+.about__tag:hover {
+  border-color: var(--border-accent);
+  color: var(--accent);
+}
+
+@media (max-width: 1024px) {
+  .about__inner {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .about__visual {
+    order: -1;
+  }
+}
+
+@media (max-width: 640px) {
+  .about__brand-mark {
+    width: 100px;
+    height: 100px;
+  }
+
+  .about__initial {
+    font-size: 3rem;
+  }
+}

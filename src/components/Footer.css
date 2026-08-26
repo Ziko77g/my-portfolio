@@ -1,0 +1,110 @@
+.footer {
+  border-top: 1px solid var(--border-primary);
+  padding: var(--space-4xl) 0 var(--space-2xl);
+  background: var(--bg-primary);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: var(--space-3xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.footer__logo {
+  font-family: 'Outfit', sans-serif;
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--text-primary);
+  display: block;
+  margin-bottom: var(--space-sm);
+  transition: color var(--transition-fast);
+}
+
+.footer__logo:hover {
+  color: var(--accent);
+}
+
+.footer__tagline {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+}
+
+.footer__links {
+  display: flex;
+  gap: var(--space-4xl);
+}
+
+.footer__group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.footer__link {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  transition: color var(--transition-fast);
+}
+
+.footer__link:hover {
+  color: var(--accent);
+}
+
+.footer__social {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.footer__social-link {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  color: var(--text-tertiary);
+  border: 1px solid var(--border-primary);
+  transition: all var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  color: var(--accent);
+  border-color: var(--border-accent);
+  background: var(--accent-subtle);
+}
+
+/* Bottom */
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: var(--space-xl);
+  border-top: 1px solid var(--border-secondary);
+}
+
+.footer__copyright,
+.footer__built {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer__inner {
+    flex-direction: column;
+    gap: var(--space-2xl);
+  }
+
+  .footer__links {
+    gap: var(--space-2xl);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-sm);
+    text-align: center;
+  }
+}
